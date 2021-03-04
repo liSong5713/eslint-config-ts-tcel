@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-ts-tcel",
+  "version": "0.0.1",
+  "description": "typescript 代码规范",
+  "main": "index.js",
+  "keywords": [
+    "code standards",
+    "code style",
+    "enforce",
+    "eslint",
+    "hint",
+    "eslint",
+    "tslint",
+    "lint"
+  ],
+  "scripts": {},
+  "author": {
+    "name": "rick.li",
+    "email": "lisong5713@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  }
+}
