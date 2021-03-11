@@ -189,7 +189,11 @@ module.exports = {
     semi: ['error', 'always'],
     'semi-spacing': ['error', { before: false, after: true }],
     'space-before-blocks': ['error', 'always'],
-    'space-before-function-paren': [2, { anonymous: 'never', named: 'never' }],
+    "space-before-function-paren": ["error", {
+      "anonymous": null,
+      "named": "always",
+      "asyncArrow": "always"
+  }],
     'space-in-parens': ['error', 'never'],
     'space-infix-ops': 'error',
     'space-unary-ops': ['error', { words: true, nonwords: false }],
@@ -223,6 +227,7 @@ module.exports = {
     'no-unused-vars': ['off'], // 关闭未使用变量校验因为与@typescript-eslint/no-unused-vars重复
     '@typescript-eslint/no-explicit-any': ['error'],
     // prettier 与tslint 重合键
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     '@typescript-eslint/quotes': 0,
     '@typescript-eslint/no-var-requires': 0,
     '@typescript-eslint/no-unused-vars': ['error'],
