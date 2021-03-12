@@ -13,6 +13,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   parserOptions: {
     // Only ESLint 6.2.0 and later support ES2020.
+    project: './tsconfig.json',
     ecmaVersion: 2020,
     sourceType: 'module', // Allows for the use of imports
   },
