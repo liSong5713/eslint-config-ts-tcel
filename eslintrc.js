@@ -220,7 +220,7 @@ module.exports = {
       },
     ],
     'no-unused-vars': ['off'], // 关闭未使用变量校验因为与@typescript-eslint/no-unused-vars重复
-    '@typescript-eslint/no-explicit-any': ['error'],
+    '@typescript-eslint/no-explicit-any': ['warn'],
     // prettier 与tslint 重合键
     "@typescript-eslint/explicit-module-boundary-types": "off",
     '@typescript-eslint/quotes': 0,
