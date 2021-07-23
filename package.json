@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ts-tcel",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "typescript 代码规范",
   "main": "index.js",
   "keywords": [
