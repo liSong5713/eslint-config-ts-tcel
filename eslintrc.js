@@ -64,7 +64,7 @@ module.exports = {
     'lines-between-class-members': ['error', 'always'],
     'new-cap': ['error', { newIsCap: true, capIsNew: false }],
     'new-parens': 'error',
-    'no-array-constructor': 'error',
+    'no-array-constructor': 'off',
     'no-async-promise-executor': 'error',
     'no-caller': 'error',
     'no-class-assign': 'error',
