@@ -17,15 +17,7 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module', // Allows for the use of imports
   },
-  ignorePatterns: [
-    'dist',
-    'node_modules',
-    '__TESTS__',
-    '__TEST__',
-    'static',
-    'scripts',
-    'src/typings',
-  ],
+  ignorePatterns: ['dist', 'node_modules', '__TESTS__', '__TEST__', 'static', 'scripts', 'src/typings'],
   extends: [
     // 'eslint:recommended',
     'plugin:node/recommended',
@@ -94,7 +86,7 @@ module.exports = {
     'no-implied-eval': 'error',
     'no-inner-declarations': ['error', 'functions'],
     'no-invalid-regexp': 'error',
-    'no-irregular-whitespace': 'error',
+    'no-irregular-whitespace': ['error', { skipComments: true }],
     'no-iterator': 'error',
     'no-label-var': 'error',
     'no-labels': ['error', { allowLoop: false, allowSwitch: false }],
@@ -168,20 +160,10 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'no-with': 'error',
     'object-curly-spacing': ['error', 'always'],
-    'object-property-newline': [
-      'error',
-      { allowMultiplePropertiesPerLine: true },
-    ],
+    'object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
     'one-var': ['error', { initialized: 'never' }],
-    'operator-linebreak': [
-      'error',
-      'after',
-      { overrides: { '?': 'before', ':': 'before' } },
-    ],
-    'padded-blocks': [
-      'error',
-      { blocks: 'never', switches: 'never', classes: 'never' },
-    ],
+    'operator-linebreak': ['error', 'after', { overrides: { '?': 'before', ':': 'before' } }],
+    'padded-blocks': ['error', { blocks: 'never', switches: 'never', classes: 'never' }],
     'prefer-const': ['error', { destructuring: 'all' }],
     'prefer-promise-reject-errors': 'error',
     'quote-props': ['error', 'as-needed'],
@@ -222,7 +204,7 @@ module.exports = {
     'no-unused-vars': ['off'], // 关闭未使用变量校验因为与@typescript-eslint/no-unused-vars重复
     '@typescript-eslint/no-explicit-any': ['warn'],
     // prettier 与tslint 重合键
-    "@typescript-eslint/explicit-module-boundary-types": "off",
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/quotes': 0,
     '@typescript-eslint/no-var-requires': 0,
     '@typescript-eslint/no-unused-vars': ['error'],
