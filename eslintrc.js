@@ -25,6 +25,7 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
+    'no-console': 1,
     'require-yield': 'error',
     'for-direction': 'error',
     'getter-return': 'error',
@@ -203,24 +204,8 @@ module.exports = {
     ],
     'no-unused-vars': ['off'], // 关闭未使用变量校验因为与@typescript-eslint/no-unused-vars重复
     '@typescript-eslint/no-explicit-any': ['warn'],
-    // prettier 与tslint 重合键
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/quotes': 0,
-    '@typescript-eslint/no-var-requires': 0,
-    '@typescript-eslint/no-unused-vars': ['error'],
-    '@typescript-eslint/brace-style': 'off',
-    '@typescript-eslint/comma-dangle': 'off',
-    '@typescript-eslint/comma-spacing': 'off',
-    '@typescript-eslint/func-call-spacing': 'off',
-    '@typescript-eslint/indent': 'off',
-    '@typescript-eslint/keyword-spacing': 'off',
-    '@typescript-eslint/member-delimiter-style': 'off',
-    '@typescript-eslint/no-extra-parens': 'off',
-    '@typescript-eslint/no-extra-semi': 'off',
-    '@typescript-eslint/object-curly-spacing': 'off',
-    '@typescript-eslint/semi': 'off',
-    '@typescript-eslint/space-before-function-paren': 'off',
-    '@typescript-eslint/space-infix-ops': 'off',
-    '@typescript-eslint/type-annotation-spacing': 'off',
+    'prettier/prettier': 2, // Means error
+    'arrow-body-style': 'off',
+    'prefer-arrow-callback': 'off',
   },
 };
