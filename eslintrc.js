@@ -202,8 +202,9 @@ module.exports = {
         allowModules: ['koa'], // 不允许不存在package.json中的外部依赖引入
       },
     ],
-    'no-unused-vars': ['off'], // 关闭未使用变量校验因为与@typescript-eslint/no-unused-vars重复
+    'no-unused-vars': ['error'],
     '@typescript-eslint/no-explicit-any': ['warn'],
+    '@typescript-eslint/no-unused-vars': 'off',
     'prettier/prettier': 2, // Means error
     'arrow-body-style': 'off',
     'prefer-arrow-callback': 'off',
